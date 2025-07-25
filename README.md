@@ -3,6 +3,7 @@
 This is a simple web application that displays a 3-day weather forecast using the WeatherAPI. Users can search for weather in specific cities or view the default weather for Cairo upon loading the page.
 
 ---
+##### 🌐 visit the website: [Weather-Project live Demo](https://anas26772001.github.io/Weather-project/)
 
 ## 🚀 Features
 
