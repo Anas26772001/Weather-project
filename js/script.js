@@ -76,11 +76,7 @@ function displayThreeDaysOfWeather(myData) {
 async function getApi(country = "cairo") {
   try {
     const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=b851809d3dfb4f45a6d235351250405&q=${country}&days=7`)
-    console.log(response)
-    if (!(response.ok)) {
-      throw new Error()
-    }
-    console.log(response)
+    if (!(response.ok)) { throw new Error() }
     const data = await response.json()
     displayThreeDaysOfWeather(data)
   } catch (error) {
@@ -107,5 +103,3 @@ btn.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", () => {
   getApi()
 })
-
-
